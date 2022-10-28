@@ -1,0 +1,170 @@
+Current configuration : 2990 bytes
+!
+! Last configuration change at 00:05:45 UTC Fri Mar 5 1993
+!
+version 15.0
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Switch1
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$K/B4$Oljys3XzHB.zg1P3ppxW1.
+!
+username Admin password 0 Cisco123!
+no aaa new-model
+system mtu routing 1500
+!
+ip dhcp pool vlan25
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 20
+ switchport mode access
+ spanning-tree portfast
+!
+interface FastEthernet0/2
+ switchport access vlan 25
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/4
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/5
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/6
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/7
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/8
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/9
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/10
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/11
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/12
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/13
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/14
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/15
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/16
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/17
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/18
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/19
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/20
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/21
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/22
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/23
+ switchport access vlan 30
+ switchport mode access
+!
+interface FastEthernet0/24
+ switchport access vlan 30
+ switchport mode access
+!
+interface GigabitEthernet0/1
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 20,25,30
+ switchport mode trunk
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan25
+ description Management
+ ip address 10.3.0.98 255.255.255.240
+!
+ip http server
+ip http secure-server
+!
+banner motd ^CUnauthorized access to this device is prohibited!^C
+!
+line con 0
+line vty 0 4
+ password Cisco123!
+ login local
+ transport input ssh
+line vty 5 15
+ login
+!
+ntp server 10.3.0.97
+end
