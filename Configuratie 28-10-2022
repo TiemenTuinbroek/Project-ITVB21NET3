@@ -1,0 +1,148 @@
+Router 1
+- SSh is geconfigureerd
+- Domian ingesteld
+- Ip addressen toegevoegd zoals in het ip-plan
+
+! Last configuration change at 07:56:13 UTC Fri Oct 28 2022
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$6T9d$i63oREgosZQuDakKZez5L1
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain name mixinc.com
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+cts logging verbose
+!
+!
+license udi pid CISCO1941/K9 sn FCZ2048B07G
+license boot module c1900 technology-package securityk9
+!
+!
+vtp mode transparent
+vtp version 2
+username Admin password 0 Cisco123!
+!
+redundancy
+!
+!
+!
+!
+!
+ip ssh version 2
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.20
+ description VLAN 20 Gasten
+ encapsulation dot1Q 20
+ ip address 10.3.0.65 255.255.255.224
+!
+interface GigabitEthernet0/0.25
+ description VLAN 25 Management
+ encapsulation dot1Q 25
+ ip address 10.3.0.97 255.255.255.240
+!
+interface GigabitEthernet0/0.30
+ description VLAN 30 Medewerkers
+ encapsulation dot1Q 30
+ ip address 10.3.0.1 255.255.255.192
+!
+interface GigabitEthernet0/1
+ ip address 10.3.0.113 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface Serial0/0/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/0/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/1/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/1/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 10.3.0.114
+!
+!
+!
+!
+control-plane
+!
+!
+!
+line con 0
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport output pad telnet rlogin lapb-ta mop udptn v120 ssh
+ stopbits 1
+line vty 0 4
+ password Cisco123!
+ login local
+ transport input ssh
+!
+scheduler allocate 20000 1000
+!
+end
