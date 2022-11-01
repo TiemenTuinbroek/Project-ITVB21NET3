@@ -1,0 +1,954 @@
+System Inventory
+NAME: "Chassis"    , DESCR: "Cisco 2500 Series Wireless LAN Controller"
+PID: AIR-CT2504-K9,  VID: V07,  SN: PSZ20411AZY
+
+Burned-in MAC Address............................ 00:42:5A:55:60:60
+Maximum number of APs supported.................. 75
+Press Enter to continue or <ctrl-z> to abort
+
+
+System Information
+Manufacturer's Name.............................. Cisco Systems Inc.
+Product Name..................................... Cisco Controller
+Product Version.................................. 8.2.166.0
+Bootloader Version............................... 1.0.20
+Field Recovery Image Version..................... 7.6.101.1
+Firmware Version................................. PIC 20.0
+
+
+Build Type....................................... DATA + WPS
+
+System Name...................................... WLC1
+System Location..................................
+System Contact...................................
+System ObjectID.................................. 1.3.6.1.4.1.9.1.1279
+IP Address....................................... 10.3.0.99
+IPv6 Address..................................... ::
+Last Reset....................................... Software reset
+System Up Time................................... 0 days 4 hrs 45 mins 38 secs
+System Timezone Location.........................
+System Stats Realtime Interval................... 5
+System Stats Normal Interval..................... 180
+
+--More or (q)uit current module or <ctrl-z> to abort
+
+Configured Country............................... NL  - Netherlands
+Operating Environment............................ Commercial (0 to 40 C)
+Internal Temp Alarm Limits....................... 0 to 65 C
+Internal Temperature............................. +36 C
+External Temperature............................. +38 C
+Fan Status....................................... 3500 rpm
+
+State of 802.11b Network......................... Enabled
+State of 802.11a Network......................... Enabled
+Number of WLANs.................................. 2
+Number of Active Clients......................... 0
+
+Burned-in MAC Address............................ 00:42:5A:55:60:60
+Maximum number of APs supported.................. 75
+System Nas-Id....................................
+WLC MIC Certificate Types........................ SHA1/SHA2
+Press Enter to continue or <ctrl-z> to abort
+
+
+Backup Controller Configuration
+
+AP primary Backup Controller ....................
+AP secondary Backup Controller ..................
+Press Enter to continue or <ctrl-z> to abort
+
+
+ System Time Information:
+
+Time............................................. Tue Nov  1 13:54:17 2022
+
+Timezone delta................................... 0:0
+Timezone location................................
+
+NTP Servers
+    NTP Polling Interval.........................     80400
+
+     Index     NTP Key Index                  NTP Server                Status          NTP Msg Auth Status
+    -------  ----------------------------------------------------------------------------------------------
+       1              0                                   10.3.0.97     In Sync              AUTH DISABLED
+
+
+Press Enter to continue or <ctrl-z> to abort
+
+
+Redundancy Information
+Redundancy Mode ................................. SSO DISABLED
+Local State...................................... ACTIVE
+Peer State....................................... N/A
+Unit............................................. Primary
+Unit ID.......................................... 00:42:5A:55:60:60
+Redunadancy State................................ N/A
+Mobility MAC..................................... 00:42:5A:55:60:60
+Redundancy Management IP Address................. 0.0.0.0
+Peer Redundancy Management IP Address............ 0.0.0.0
+Redundancy Port IP Address....................... 0.0.0.0
+Peer Redundancy Port IP Address.................. 169.254.0.0
+Press Enter to continue or <ctrl-z> to abort
+
+
+AP Bundle Information
+
+Primary AP Image        Size
+----------------        ----
+ap1g1                   12932
+ap1g2                   11948
+ap1g3                   13940
+ap1g4                   19476
+ap3g1                   9908
+ap3g2                   13680
+ap3g3                   18836
+ap801                   8348
+ap802                   9816
+c1140                   8796
+c1520                   7492
+c1550                   10816
+c1570                   11736
+c602i                   3864
+version.info                    4
+
+Secondary AP Image      Size
+------------------      ----
+
+--More or (q)uit current module or <ctrl-z> to abort
+ap1g1                   10908
+ap1g2                   11368
+ap1g3                   7684
+ap3g1                   10256
+ap3g2                   13480
+ap3g3                   0
+ap801                   7532
+ap802                   8968
+c1130                   5092
+c1140                   10096
+c1250                   7272
+c1520                   8408
+c602i                   3756
+version.info                    4
+Press Enter to continue or <ctrl-z> to abort
+
+
+Switch Configuration
+802.3x Flow Control Mode......................... Disable
+FIPS prerequisite features....................... Disabled
+WLANCC prerequisite features..................... Disabled
+UCAPL prerequisite features...................... Disabled
+DTLS WLC MIC .................................... SHA2
+secret obfuscation............................... Enabled
+Strong Password Check Features
+   case-check.................................... Enabled
+   consecutive-check............................. Enabled
+   default-check................................. Enabled
+   username-check................................ Enabled
+   position-check................................ Disabled
+   case-digit-check.............................. Disabled
+   Min. Password length.......................... 3
+   Min. Upper case chars......................... 0
+   Min. Lower case chars......................... 0
+   Min. Digits chars............................. 0
+   Min. Special chars............................ 0
+Mgmt User
+   Password Lifetime [days]...................... 0
+   Password Lockout.............................. Disabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+   Lockout Attempts.............................. 3
+   Lockout Timeout [mins]........................ 5
+SNMPv3 User
+   Password Lifetime [days]...................... 0
+   Password Lockout.............................. Disabled
+   Lockout Attempts.............................. 3
+   Lockout Timeout [mins]........................ 5
+Press Enter to continue or <ctrl-z> to abort
+
+
+Network Information
+RF-Network Name............................. groepf03Mobility
+DNS Server IP...............................
+Web Mode.................................... Enable
+Secure Web Mode............................. Enable
+Secure Web Mode Cipher-Option High.......... Disable
+Secure Web Mode Cipher-Option SSLv2......... Disable
+Secure Web Mode RC4 Cipher Preference....... Disable
+Secure Web Mode SSL Protocol................ Disable
+OCSP........................................ Disabled
+OCSP responder URL..........................
+Secure Shell (ssh).......................... Enable
+Secure Shell (ssh) Cipher-Option High....... Disable
+Telnet...................................... Disable
+Ethernet Multicast Forwarding............... Disable
+Ethernet Broadcast Forwarding............... Disable
+IPv4 AP Multicast/Broadcast Mode............ Multicast   Address : 239.0.0.1
+IPv6 AP Multicast/Broadcast Mode............ Multicast   Address : ::
+IGMP snooping............................... Disabled
+IGMP timeout................................ 60 seconds
+IGMP Query Interval......................... 20 seconds
+MLD snooping................................ Disabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+MLD timeout................................. 60 seconds
+MLD query interval.......................... 20 seconds
+User Idle Timeout........................... 300 seconds
+ARP Idle Timeout............................ 300 seconds
+Cisco AP Default Master..................... Disable
+AP Join Priority............................ Disable
+Mgmt Via Wireless Interface................. Enable
+Mgmt Via Dynamic Interface.................. Disable
+Bridge MAC filter Config.................... Enable
+Bridge Security Mode........................ EAP
+Mesh Full Sector DFS........................ Enable
+Mesh Backhaul RRM........................... Disable
+AP Fallback ................................ Enable
+Web Auth CMCC Support ...................... Disabled
+Web Auth Redirect Ports .................... 80
+Web Auth Proxy Redirect  ................... Disable
+Web Auth Captive-Bypass   .................. Disable
+Web Auth Secure Web  ....................... Enable
+Web Auth Secure Redirection  ............... Disable
+Fast SSID Change ........................... Disabled
+AP Discovery - NAT IP Only ................. Enabled
+IP/MAC Addr Binding Check .................. Enabled
+Link Local Bridging Status ................. Disabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+CCX-lite status ............................ Disable
+oeap-600 dual-rlan-ports ................... Disable
+oeap-600 local-network ..................... Enable
+oeap-600 Split Tunneling (Printers)......... Disable
+WebPortal Online Client .................... 0
+WebPortal NTF_LOGOUT Client ................ 0
+mDNS snooping............................... Disabled
+mDNS Query Interval......................... 15 minutes
+Web Color Theme............................. Default
+Capwap Prefer Mode.......................... IPv4
+Network Profile............................. Disabled
+Client ip conflict detection (DHCP) ........ Disabled
+Mesh BH RRM ................................ Disable
+Mesh Aggressive DCA......................... Disable
+Mesh Auto RF................................ Disable
+HTTP Profiling Port......................... 80
+Press Enter to continue or <ctrl-z> to abort
+
+
+Port Summary
+           STP   Admin   Physical   Physical   Link   Link
+Pr  Type   Stat   Mode     Mode      Status   Status  Trap     POE
+-- ------- ---- ------- ---------- ---------- ------ ------- -------
+1  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A
+2  Normal  Disa Enable  Auto       Auto       Down   Enable  N/A
+3  Normal  Disa Enable  Auto       Auto       Down   Enable  Enable  (Power Off)
+4  Normal  Disa Enable  Auto       Auto       Down   Enable  Enable  (Power Off)
+Press Enter to continue or <ctrl-z> to abort
+
+
+AP Summary
+Number of APs.................................... 1
+
+Global AP User Name.............................. Not Configured
+Global AP Dot1x User Name........................ Not Configured
+
+AP Name             Slots  AP Model              Ethernet MAC       Location          Country     IP Address       Clients   DSE Location
+------------------  -----  --------------------  -----------------  ----------------  ----------  ---------------  --------  --------------
+APa03d.6f13.09f4     2     AIR-CAP2702I-E-K9     a0:3d:6f:13:09:f4  default location  NL          10.3.0.109         0       [0 ,0 ,0 ]
+
+AP Tcp-Mss-Adjust Info
+AP Name              TCP State  MSS Size
+------------------   --------   -------
+APa03d.6f13.09f4     disabled   -
+Press Enter to continue or <ctrl-z> to abort
+
+
+AP Location
+Total Number of AP Groups........................ 1
+
+
+Site Name........................................ default-group
+Site Description................................. <none>
+NAS-identifier................................... none
+Client Traffic QinQ Enable....................... FALSE
+DHCPv4 QinQ Enable............................... FALSE
+AP Operating Class............................... Not-configured
+Capwap Prefer Mode............................... Not-configured
+
+RF Profile
+----------
+2.4 GHz band..................................... <none>
+5 GHz band....................................... <none>
+
+WLAN ID          Interface          Network Admission Control          Radio Policy
+-------          -----------        --------------------------         ------------
+ 1               management           Disabled                          None
+ 2               management           Disabled                          None
+
+
+--More or (q)uit current module or <ctrl-z> to abort
+*AP3600 with 802.11ac Module will only advertise first 8 WLANs on 5GHz radios.
+
+
+ Lan Port configs
+ ----------------
+
+LAN          Status        POE          RLAN
+---          -------       ----         -----
+ 1           Disabled      Disabled     None
+ 2           Disabled                   None
+ 3           Disabled                   None
+
+ External 3G/4G module configs
+ -----------------------------
+
+LAN          Status        POE          RLAN
+---          -------       ----         -----
+ 1           Disabled                   None
+
+AP Name             Slots  AP Model             Ethernet MAC       Location          Port  Country  Priority
+------------------  -----  -------------------  -----------------  ----------------  ----  -------  --------
+APa03d.6f13.09f4     2     AIR-CAP2702I-E-K9    a0:3d:6f:13:09:f4  default location  1     NL       1
+
+
+--More or (q)uit current module or <ctrl-z> to abort
+
+Press Enter to continue or <ctrl-z> to abort
+
+
+RF Profile
+
+Number of RF Profiles............................ 6
+
+Out Of Box State................................. Disabled
+
+Out Of Box Persistence........................... Disabled
+
+RF Profile Name                    Band     Description                          11n-client-only     Applied
+---------------------------------  -------  -----------------------------------  ------------------  ----------
+High-Client-Density-802.11a        5 GHz    <none>                               disable             No
+High-Client-Density-802.11bg       2.4 GHz  <none>                               disable             No
+Low-Client-Density-802.11a         5 GHz    <none>                               disable             No
+Low-Client-Density-802.11bg        2.4 GHz  <none>                               disable             No
+Typical-Client-Density-802.11a     5 GHz    <none>                               disable             No
+Typical-Client-Density-802.11bg    2.4 GHz  <none>                               disable             No
+
+
+RF Profile name................................ High-Client-Density-802.11a
+Description...................................... <none>
+AP Group Name.................................... <none>
+Radio policy..................................... 5 GHz
+
+--More or (q)uit current module or <ctrl-z> to abort
+11n-client-only.................................. disabled
+Transmit Power Threshold v1...................... -65 dBm
+Transmit Power Threshold v2...................... -67 dBm
+Min Transmit Power............................... 7 dBm
+Max Transmit Power............................... 30 dBm
+802.11a Operational Rates
+    802.11a 6M Rate.............................. Disabled
+    802.11a 9M Rate.............................. Disabled
+    802.11a 12M Rate............................. Mandatory
+    802.11a 18M Rate............................. Supported
+    802.11a 24M Rate............................. Mandatory
+    802.11a 36M Rate............................. Supported
+    802.11a 48M Rate............................. Supported
+    802.11a 54M Rate............................. Supported
+Max Clients...................................... 200
+
+WLAN ID          Max Clients
+-------          -------
+  1                600
+  2                600
+
+Trap Threshold
+    Clients...................................... 12 clients
+
+--More or (q)uit current module or <ctrl-z> to abort
+    Interference................................. 10 %
+    Noise........................................ -70 dBm
+    Utilization.................................. 80 %
+Multicast Data Rate.............................. 0
+Rx Sop Threshold................................. -78 dBm
+Cca Threshold.................................... 0 dBm
+Slot Admin State:................................ Enabled
+
+Band Select
+    Probe Response............................... Disabled
+    Cycle Count.................................. 2 cycles
+    Cycle Threshold.............................. 200 milliseconds
+    Expire Suppression........................... 20 seconds
+    Expire Dual Band............................. 60 seconds
+    Client Rssi.................................. -80 dBm
+    Client Mid Rssi.............................. -80 dBm
+
+Load Balancing
+    Denial....................................... 3 count
+    Window....................................... 5 clients
+
+Coverage Data
+    Data......................................... -80 dBm
+
+--More or (q)uit current module or <ctrl-z> to abort
+    Voice........................................ -80 dBm
+    Minimum Client Level......................... 3 clients
+    Exception Level.............................. 25 %
+DCA Channel List................................. 36,40,44,48,52,56,60,64,100,
+                                                  104,108,112,116,120,124,128,
+                                                  132,136,140
+DCA Bandwidth.................................... 20
+DCA Foreign AP Contribution...................... enabled
+
+802.11n MCS Rates
+    MCS-00 Rate.................................. enabled
+    MCS-01 Rate.................................. enabled
+    MCS-02 Rate.................................. enabled
+    MCS-03 Rate.................................. enabled
+    MCS-04 Rate.................................. enabled
+    MCS-05 Rate.................................. enabled
+    MCS-06 Rate.................................. enabled
+    MCS-07 Rate.................................. enabled
+    MCS-08 Rate.................................. enabled
+    MCS-09 Rate.................................. enabled
+    MCS-10 Rate.................................. enabled
+    MCS-11 Rate.................................. enabled
+    MCS-12 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-13 Rate.................................. enabled
+    MCS-14 Rate.................................. enabled
+    MCS-15 Rate.................................. enabled
+    MCS-16 Rate.................................. enabled
+    MCS-17 Rate.................................. enabled
+    MCS-18 Rate.................................. enabled
+    MCS-19 Rate.................................. enabled
+    MCS-20 Rate.................................. enabled
+    MCS-21 Rate.................................. enabled
+    MCS-22 Rate.................................. enabled
+    MCS-23 Rate.................................. enabled
+    MCS-24 Rate.................................. enabled
+    MCS-25 Rate.................................. enabled
+    MCS-26 Rate.................................. enabled
+    MCS-27 Rate.................................. enabled
+    MCS-28 Rate.................................. enabled
+    MCS-29 Rate.................................. enabled
+    MCS-30 Rate.................................. enabled
+    MCS-31 Rate.................................. enabled
+ Client Network Preference....................... default
+
+RF Profile name................................ High-Client-Density-802.11bg
+Description...................................... <none>
+
+--More or (q)uit current module or <ctrl-z> to abort
+AP Group Name.................................... <none>
+Radio policy..................................... 2.4 GHz
+11n-client-only.................................. disabled
+Transmit Power Threshold v1...................... -70 dBm
+Transmit Power Threshold v2...................... -67 dBm
+Min Transmit Power............................... 7 dBm
+Max Transmit Power............................... 30 dBm
+802.11b/g Operational Rates
+    802.11b/g 1M Rate............................ Disabled
+    802.11b/g 2M Rate............................ Disabled
+    802.11b/g 5.5M Rate.......................... Disabled
+    802.11b/g 11M Rate........................... Disabled
+    802.11g 6M Rate.............................. Disabled
+    802.11g 9M Rate.............................. Supported
+    802.11g 12M Rate............................. Mandatory
+    802.11g 18M Rate............................. Supported
+    802.11g 24M Rate............................. Supported
+    802.11g 36M Rate............................. Supported
+    802.11g 48M Rate............................. Supported
+    802.11g 54M Rate............................. Supported
+Max Clients...................................... 200
+
+WLAN ID          Max Clients
+
+--More or (q)uit current module or <ctrl-z> to abort
+-------          -------
+  1                600
+  2                600
+
+Trap Threshold
+    Clients...................................... 12 clients
+    Interference................................. 10 %
+    Noise........................................ -70 dBm
+    Utilization.................................. 80 %
+Multicast Data Rate.............................. 0
+Rx Sop Threshold................................. -82 dBm
+Cca Threshold.................................... 0 dBm
+Slot Admin State:................................ Enabled
+
+Band Select
+    Probe Response............................... Disabled
+    Cycle Count.................................. 2 cycles
+    Cycle Threshold.............................. 200 milliseconds
+    Expire Suppression........................... 20 seconds
+    Expire Dual Band............................. 60 seconds
+    Client Rssi.................................. -80 dBm
+    Client Mid Rssi.............................. -80 dBm
+
+
+--More or (q)uit current module or <ctrl-z> to abort
+Load Balancing
+    Denial....................................... 3 count
+    Window....................................... 5 clients
+
+Coverage Data
+    Data......................................... -80 dBm
+    Voice........................................ -80 dBm
+    Minimum Client Level......................... 3 clients
+    Exception Level.............................. 25 %
+DCA Channel List................................. 1,6,11
+DCA Bandwidth.................................... 20
+DCA Foreign AP Contribution...................... enabled
+
+802.11n MCS Rates
+    MCS-00 Rate.................................. enabled
+    MCS-01 Rate.................................. enabled
+    MCS-02 Rate.................................. enabled
+    MCS-03 Rate.................................. enabled
+    MCS-04 Rate.................................. enabled
+    MCS-05 Rate.................................. enabled
+    MCS-06 Rate.................................. enabled
+    MCS-07 Rate.................................. enabled
+    MCS-08 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-09 Rate.................................. enabled
+    MCS-10 Rate.................................. enabled
+    MCS-11 Rate.................................. enabled
+    MCS-12 Rate.................................. enabled
+    MCS-13 Rate.................................. enabled
+    MCS-14 Rate.................................. enabled
+    MCS-15 Rate.................................. enabled
+    MCS-16 Rate.................................. enabled
+    MCS-17 Rate.................................. enabled
+    MCS-18 Rate.................................. enabled
+    MCS-19 Rate.................................. enabled
+    MCS-20 Rate.................................. enabled
+    MCS-21 Rate.................................. enabled
+    MCS-22 Rate.................................. enabled
+    MCS-23 Rate.................................. enabled
+    MCS-24 Rate.................................. enabled
+    MCS-25 Rate.................................. enabled
+    MCS-26 Rate.................................. enabled
+    MCS-27 Rate.................................. enabled
+    MCS-28 Rate.................................. enabled
+    MCS-29 Rate.................................. enabled
+    MCS-30 Rate.................................. enabled
+    MCS-31 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+ Client Network Preference....................... default
+
+RF Profile name................................ Low-Client-Density-802.11a
+Description...................................... <none>
+AP Group Name.................................... <none>
+Radio policy..................................... 5 GHz
+11n-client-only.................................. disabled
+Transmit Power Threshold v1...................... -60 dBm
+Transmit Power Threshold v2...................... -67 dBm
+Min Transmit Power............................... -10 dBm
+Max Transmit Power............................... 30 dBm
+802.11a Operational Rates
+    802.11a 6M Rate.............................. Mandatory
+    802.11a 9M Rate.............................. Supported
+    802.11a 12M Rate............................. Mandatory
+    802.11a 18M Rate............................. Supported
+    802.11a 24M Rate............................. Mandatory
+    802.11a 36M Rate............................. Supported
+    802.11a 48M Rate............................. Supported
+    802.11a 54M Rate............................. Supported
+Max Clients...................................... 200
+
+WLAN ID          Max Clients
+
+--More or (q)uit current module or <ctrl-z> to abort
+-------          -------
+  1                600
+  2                600
+
+Trap Threshold
+    Clients...................................... 12 clients
+    Interference................................. 10 %
+    Noise........................................ -70 dBm
+    Utilization.................................. 80 %
+Multicast Data Rate.............................. 0
+Rx Sop Threshold................................. -80 dBm
+Cca Threshold.................................... 0 dBm
+Slot Admin State:................................ Enabled
+
+Band Select
+    Probe Response............................... Disabled
+    Cycle Count.................................. 2 cycles
+    Cycle Threshold.............................. 200 milliseconds
+    Expire Suppression........................... 20 seconds
+    Expire Dual Band............................. 60 seconds
+    Client Rssi.................................. -80 dBm
+    Client Mid Rssi.............................. -80 dBm
+
+
+--More or (q)uit current module or <ctrl-z> to abort
+Load Balancing
+    Denial....................................... 3 count
+    Window....................................... 5 clients
+
+Coverage Data
+    Data......................................... -90 dBm
+    Voice........................................ -90 dBm
+    Minimum Client Level......................... 2 clients
+    Exception Level.............................. 25 %
+DCA Channel List................................. 36,40,44,48,52,56,60,64,100,
+                                                  104,108,112,116,120,124,128,
+                                                  132,136,140
+DCA Bandwidth.................................... 20
+DCA Foreign AP Contribution...................... enabled
+
+802.11n MCS Rates
+    MCS-00 Rate.................................. enabled
+    MCS-01 Rate.................................. enabled
+    MCS-02 Rate.................................. enabled
+    MCS-03 Rate.................................. enabled
+    MCS-04 Rate.................................. enabled
+    MCS-05 Rate.................................. enabled
+    MCS-06 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-07 Rate.................................. enabled
+    MCS-08 Rate.................................. enabled
+    MCS-09 Rate.................................. enabled
+    MCS-10 Rate.................................. enabled
+    MCS-11 Rate.................................. enabled
+    MCS-12 Rate.................................. enabled
+    MCS-13 Rate.................................. enabled
+    MCS-14 Rate.................................. enabled
+    MCS-15 Rate.................................. enabled
+    MCS-16 Rate.................................. enabled
+    MCS-17 Rate.................................. enabled
+    MCS-18 Rate.................................. enabled
+    MCS-19 Rate.................................. enabled
+    MCS-20 Rate.................................. enabled
+    MCS-21 Rate.................................. enabled
+    MCS-22 Rate.................................. enabled
+    MCS-23 Rate.................................. enabled
+    MCS-24 Rate.................................. enabled
+    MCS-25 Rate.................................. enabled
+    MCS-26 Rate.................................. enabled
+    MCS-27 Rate.................................. enabled
+    MCS-28 Rate.................................. enabled
+    MCS-29 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-30 Rate.................................. enabled
+    MCS-31 Rate.................................. enabled
+ Client Network Preference....................... default
+
+RF Profile name................................ Low-Client-Density-802.11bg
+Description...................................... <none>
+AP Group Name.................................... <none>
+Radio policy..................................... 2.4 GHz
+11n-client-only.................................. disabled
+Transmit Power Threshold v1...................... -65 dBm
+Transmit Power Threshold v2...................... -67 dBm
+Min Transmit Power............................... -10 dBm
+Max Transmit Power............................... 30 dBm
+802.11b/g Operational Rates
+    802.11b/g 1M Rate............................ Mandatory
+    802.11b/g 2M Rate............................ Mandatory
+    802.11b/g 5.5M Rate.......................... Mandatory
+    802.11b/g 11M Rate........................... Mandatory
+    802.11g 6M Rate.............................. Supported
+    802.11g 9M Rate.............................. Supported
+    802.11g 12M Rate............................. Supported
+    802.11g 18M Rate............................. Supported
+    802.11g 24M Rate............................. Supported
+
+--More or (q)uit current module or <ctrl-z> to abort
+    802.11g 36M Rate............................. Supported
+    802.11g 48M Rate............................. Supported
+    802.11g 54M Rate............................. Supported
+Max Clients...................................... 200
+
+WLAN ID          Max Clients
+-------          -------
+  1                600
+  2                600
+
+Trap Threshold
+    Clients...................................... 12 clients
+    Interference................................. 10 %
+    Noise........................................ -70 dBm
+    Utilization.................................. 80 %
+Multicast Data Rate.............................. 0
+Rx Sop Threshold................................. -85 dBm
+Cca Threshold.................................... 0 dBm
+Slot Admin State:................................ Enabled
+
+Band Select
+    Probe Response............................... Disabled
+    Cycle Count.................................. 2 cycles
+
+--More or (q)uit current module or <ctrl-z> to abort
+    Cycle Threshold.............................. 200 milliseconds
+    Expire Suppression........................... 20 seconds
+    Expire Dual Band............................. 60 seconds
+    Client Rssi.................................. -80 dBm
+    Client Mid Rssi.............................. -80 dBm
+
+Load Balancing
+    Denial....................................... 3 count
+    Window....................................... 5 clients
+
+Coverage Data
+    Data......................................... -90 dBm
+    Voice........................................ -90 dBm
+    Minimum Client Level......................... 2 clients
+    Exception Level.............................. 25 %
+DCA Channel List................................. 1,6,11
+DCA Bandwidth.................................... 20
+DCA Foreign AP Contribution...................... enabled
+
+802.11n MCS Rates
+    MCS-00 Rate.................................. enabled
+    MCS-01 Rate.................................. enabled
+    MCS-02 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-03 Rate.................................. enabled
+    MCS-04 Rate.................................. enabled
+    MCS-05 Rate.................................. enabled
+    MCS-06 Rate.................................. enabled
+    MCS-07 Rate.................................. enabled
+    MCS-08 Rate.................................. enabled
+    MCS-09 Rate.................................. enabled
+    MCS-10 Rate.................................. enabled
+    MCS-11 Rate.................................. enabled
+    MCS-12 Rate.................................. enabled
+    MCS-13 Rate.................................. enabled
+    MCS-14 Rate.................................. enabled
+    MCS-15 Rate.................................. enabled
+    MCS-16 Rate.................................. enabled
+    MCS-17 Rate.................................. enabled
+    MCS-18 Rate.................................. enabled
+    MCS-19 Rate.................................. enabled
+    MCS-20 Rate.................................. enabled
+    MCS-21 Rate.................................. enabled
+    MCS-22 Rate.................................. enabled
+    MCS-23 Rate.................................. enabled
+    MCS-24 Rate.................................. enabled
+    MCS-25 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-26 Rate.................................. enabled
+    MCS-27 Rate.................................. enabled
+    MCS-28 Rate.................................. enabled
+    MCS-29 Rate.................................. enabled
+    MCS-30 Rate.................................. enabled
+    MCS-31 Rate.................................. enabled
+ Client Network Preference....................... default
+
+RF Profile name................................ Typical-Client-Density-802.11a
+Description...................................... <none>
+AP Group Name.................................... <none>
+Radio policy..................................... 5 GHz
+11n-client-only.................................. disabled
+Transmit Power Threshold v1...................... -70 dBm
+Transmit Power Threshold v2...................... -67 dBm
+Min Transmit Power............................... -10 dBm
+Max Transmit Power............................... 30 dBm
+802.11a Operational Rates
+    802.11a 6M Rate.............................. Mandatory
+    802.11a 9M Rate.............................. Supported
+    802.11a 12M Rate............................. Mandatory
+    802.11a 18M Rate............................. Supported
+    802.11a 24M Rate............................. Mandatory
+
+--More or (q)uit current module or <ctrl-z> to abort
+    802.11a 36M Rate............................. Supported
+    802.11a 48M Rate............................. Supported
+    802.11a 54M Rate............................. Supported
+Max Clients...................................... 200
+
+WLAN ID          Max Clients
+-------          -------
+  1                600
+  2                600
+
+Trap Threshold
+    Clients...................................... 12 clients
+    Interference................................. 10 %
+    Noise........................................ -70 dBm
+    Utilization.................................. 80 %
+Multicast Data Rate.............................. 0
+Rx Sop Threshold................................. AUTO
+Cca Threshold.................................... 0 dBm
+Slot Admin State:................................ Enabled
+
+Band Select
+    Probe Response............................... Disabled
+    Cycle Count.................................. 2 cycles
+
+--More or (q)uit current module or <ctrl-z> to abort
+    Cycle Threshold.............................. 200 milliseconds
+    Expire Suppression........................... 20 seconds
+    Expire Dual Band............................. 60 seconds
+    Client Rssi.................................. -80 dBm
+    Client Mid Rssi.............................. -80 dBm
+
+Load Balancing
+    Denial....................................... 3 count
+    Window....................................... 5 clients
+
+Coverage Data
+    Data......................................... -80 dBm
+    Voice........................................ -80 dBm
+    Minimum Client Level......................... 3 clients
+    Exception Level.............................. 25 %
+DCA Channel List................................. 36,40,44,48,52,56,60,64,100,
+                                                  104,108,112,116,120,124,128,
+                                                  132,136,140
+DCA Bandwidth.................................... 20
+DCA Foreign AP Contribution...................... enabled
+
+802.11n MCS Rates
+    MCS-00 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-01 Rate.................................. enabled
+    MCS-02 Rate.................................. enabled
+    MCS-03 Rate.................................. enabled
+    MCS-04 Rate.................................. enabled
+    MCS-05 Rate.................................. enabled
+    MCS-06 Rate.................................. enabled
+    MCS-07 Rate.................................. enabled
+    MCS-08 Rate.................................. enabled
+    MCS-09 Rate.................................. enabled
+    MCS-10 Rate.................................. enabled
+    MCS-11 Rate.................................. enabled
+    MCS-12 Rate.................................. enabled
+    MCS-13 Rate.................................. enabled
+    MCS-14 Rate.................................. enabled
+    MCS-15 Rate.................................. enabled
+    MCS-16 Rate.................................. enabled
+    MCS-17 Rate.................................. enabled
+    MCS-18 Rate.................................. enabled
+    MCS-19 Rate.................................. enabled
+    MCS-20 Rate.................................. enabled
+    MCS-21 Rate.................................. enabled
+    MCS-22 Rate.................................. enabled
+    MCS-23 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-24 Rate.................................. enabled
+    MCS-25 Rate.................................. enabled
+    MCS-26 Rate.................................. enabled
+    MCS-27 Rate.................................. enabled
+    MCS-28 Rate.................................. enabled
+    MCS-29 Rate.................................. enabled
+    MCS-30 Rate.................................. enabled
+    MCS-31 Rate.................................. enabled
+ Client Network Preference....................... default
+
+RF Profile name................................ Typical-Client-Density-802.11bg
+Description...................................... <none>
+AP Group Name.................................... <none>
+Radio policy..................................... 2.4 GHz
+11n-client-only.................................. disabled
+Transmit Power Threshold v1...................... -70 dBm
+Transmit Power Threshold v2...................... -67 dBm
+Min Transmit Power............................... -10 dBm
+Max Transmit Power............................... 30 dBm
+802.11b/g Operational Rates
+    802.11b/g 1M Rate............................ Disabled
+    802.11b/g 2M Rate............................ Disabled
+    802.11b/g 5.5M Rate.......................... Disabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    802.11b/g 11M Rate........................... Disabled
+    802.11g 6M Rate.............................. Disabled
+    802.11g 9M Rate.............................. Supported
+    802.11g 12M Rate............................. Mandatory
+    802.11g 18M Rate............................. Supported
+    802.11g 24M Rate............................. Supported
+    802.11g 36M Rate............................. Supported
+    802.11g 48M Rate............................. Supported
+    802.11g 54M Rate............................. Supported
+Max Clients...................................... 200
+
+WLAN ID          Max Clients
+-------          -------
+  1                600
+  2                600
+
+Trap Threshold
+    Clients...................................... 12 clients
+    Interference................................. 10 %
+    Noise........................................ -70 dBm
+    Utilization.................................. 80 %
+Multicast Data Rate.............................. 0
+Rx Sop Threshold................................. AUTO
+
+--More or (q)uit current module or <ctrl-z> to abort
+Cca Threshold.................................... 0 dBm
+Slot Admin State:................................ Enabled
+
+Band Select
+    Probe Response............................... Disabled
+    Cycle Count.................................. 2 cycles
+    Cycle Threshold.............................. 200 milliseconds
+    Expire Suppression........................... 20 seconds
+    Expire Dual Band............................. 60 seconds
+    Client Rssi.................................. -80 dBm
+    Client Mid Rssi.............................. -80 dBm
+
+Load Balancing
+    Denial....................................... 3 count
+    Window....................................... 5 clients
+
+Coverage Data
+    Data......................................... -80 dBm
+    Voice........................................ -80 dBm
+    Minimum Client Level......................... 3 clients
+    Exception Level.............................. 25 %
+DCA Channel List................................. 1,6,11
+DCA Bandwidth.................................... 20
+
+--More or (q)uit current module or <ctrl-z> to abort
+DCA Foreign AP Contribution...................... enabled
+
+802.11n MCS Rates
+    MCS-00 Rate.................................. enabled
+    MCS-01 Rate.................................. enabled
+    MCS-02 Rate.................................. enabled
+    MCS-03 Rate.................................. enabled
+    MCS-04 Rate.................................. enabled
+    MCS-05 Rate.................................. enabled
+    MCS-06 Rate.................................. enabled
+    MCS-07 Rate.................................. enabled
+    MCS-08 Rate.................................. enabled
+    MCS-09 Rate.................................. enabled
+    MCS-10 Rate.................................. enabled
+    MCS-11 Rate.................................. enabled
+    MCS-12 Rate.................................. enabled
+    MCS-13 Rate.................................. enabled
+    MCS-14 Rate.................................. enabled
+    MCS-15 Rate.................................. enabled
+    MCS-16 Rate.................................. enabled
+    MCS-17 Rate.................................. enabled
+    MCS-18 Rate.................................. enabled
+    MCS-19 Rate.................................. enabled
+
+--More or (q)uit current module or <ctrl-z> to abort
+    MCS-20 Rate.................................. enabled
+    MCS-21 Rate.................................. enabled
+    MCS-22 Rate.................................. enabled
+    MCS-23 Rate.................................. enabled
+    MCS-24 Rate.................................. enabled
+    MCS-25 Rate.................................. enabled
+    MCS-26 Rate.................................. enabled
+    MCS-27 Rate.................................. enabled
+    MCS-28 Rate.................................. enabled
+    MCS-29 Rate.................................. enabled
+    MCS-30 Rate.................................. enabled
+    MCS-31 Rate.................................. enabled
+ Client Network Preference....................... default
