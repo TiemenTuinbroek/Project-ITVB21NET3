@@ -1,0 +1,314 @@
+Current configuration : 8561 bytes
+!
+! Last configuration change at 11:40:34 UTC Thu Nov 3 2022 by Allard
+! NVRAM config last updated at 11:40:36 UTC Thu Nov 3 2022 by Allard
+!
+version 15.0
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Switch1
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$K/B4$Oljys3XzHB.zg1P3ppxW1.
+!
+username backup privilege 15 secret 5 $1$/e6/$h7emD5ojCDTYRiUVMeU.00
+aaa new-model
+!
+!
+aaa authentication login default group radius local
+aaa authorization exec default group radius local
+!
+!
+!
+!
+!
+!
+aaa session-id common
+system mtu routing 1500
+ip arp inspection vlan 1,20,25,30
+ip arp inspection validate src-mac dst-mac ip
+!
+ip dhcp pool vlan25
+!
+!
+ip dhcp snooping vlan 1,20,25,30
+ip dhcp snooping
+!
+!
+crypto pki trustpoint TP-self-signed-2808321408
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-2808321408
+ revocation-check none
+ rsakeypair TP-self-signed-2808321408
+!
+!
+crypto pki certificate chain TP-self-signed-2808321408
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 32383038 33323134 3038301E 170D3933 30333031 30303031
+  30315A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D32 38303833
+  32313430 3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281
+  8100AD49 49B9F9BD 8FECD1CE 1690C8B3 F98620BA 0C7A1298 2A9FF980 F473199F
+  4EB5FE3E 097C18F5 17F01CB9 8D55AA46 4499A36A C80C44E1 33827189 22F69BCB
+  2B9CC95B B1AE70FC F3A90098 4C61AC98 8C24B405 9619B0F7 0419AE93 436736D5
+  BDB51FCD 8DFE5982 F0A2298A BED86061 AD9F6030 8B2028DC F0250BBA C6A3564D
+  B6E90203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603
+  551D2304 18301680 14D398BA 1B17E89C 1F096B6E 11961E7D 7C444015 22301D06
+  03551D0E 04160414 D398BA1B 17E89C1F 096B6E11 961E7D7C 44401522 300D0609
+  2A864886 F70D0101 05050003 81810062 F9EC7212 83B2F467 F60A8CBC A39CEC7B
+  DFB7664E 9482D71D A3260C0C 04FC2A49 C6CB8243 4A9C3485 813A39FC 6E1EB9B3
+  4132BD17 C9A37A7E 3D9546E7 ADF85173 5B0DC90D DD918698 D8E8EE2F 92F8C14E
+  B1094230 932BE258 8C81CEAD 4BA7A09C 97A53389 355DC344 9E519B1B BC8EC970
+  7B23E0B7 AFCF3C83 98E61B7A EB8655
+        quit
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ switchport trunk native vlan 25
+ switchport mode trunk
+ ip arp inspection trust
+ ip dhcp snooping trust
+!
+interface FastEthernet0/2
+ switchport access vlan 25
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/3
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 2cfd.a1ae.e615
+ switchport port-security mac-address sticky 34d0.b8c1.b857
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/4
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/5
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/6
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/7
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 38f3.ab9a.764f
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/8
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/9
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/10
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/11
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/12
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/13
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/14
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/15
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/16
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/17
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/18
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/19
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/20
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/21
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/22
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/23
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface FastEthernet0/24
+ switchport access vlan 30
+ switchport mode access
+ switchport port-security maximum 20
+ switchport port-security mac-address sticky
+ switchport port-security
+ ip dhcp snooping limit rate 20
+!
+interface GigabitEthernet0/1
+ switchport trunk native vlan 25
+ switchport mode trunk
+ ip arp inspection trust
+ ip dhcp snooping trust
+!
+interface GigabitEthernet0/2
+ switchport mode trunk
+ ip arp inspection trust
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan25
+ description Management
+ ip address 10.3.0.98 255.255.255.240
+!
+ip http server
+ip http secure-server
+radius-server host 10.3.2.2 key OiEO$CAFYlNc0z4@W0OlRAIuA&j%Z7OgqJfIfTwPNwoeKLa3ioJCkwcrk%clxM!m
+!
+!
+!
+banner motd ^CUnauthorized access to this device is prohibited!^C
+!
+line con 0
+ privilege level 15
+line vty 0 4
+ privilege level 15
+ transport input ssh
+line vty 5 15
+!
+ntp server 10.3.0.97
+end
