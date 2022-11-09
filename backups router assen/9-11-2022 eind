@@ -1,0 +1,188 @@
+
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$6T9d$i63oREgosZQuDakKZez5L1
+!
+aaa new-model
+!
+!
+aaa authentication login default group radius local
+aaa authorization exec default group radius local
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain name mixinc.com
+ip name-server 10.3.2.2
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+cts logging verbose
+!
+!
+license udi pid CISCO1941/K9 sn FCZ2048B07G
+license boot module c1900 technology-package securityk9
+!
+!
+vtp mode transparent
+vtp version 2
+username backup privilege 15 secret 5 $1$pifb$Q2eDZt4n3UCkz5GiMGcxR1
+!
+redundancy
+!
+!
+!
+!
+!
+ip ssh version 2
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.20
+ description VLAN 20 Gasten
+ encapsulation dot1Q 20
+ ip address 10.3.0.65 255.255.255.224
+ ip access-group Gasten in
+ ip helper-address 10.3.2.2
+!
+interface GigabitEthernet0/0.25
+ description VLAN 25 Management
+ encapsulation dot1Q 25 native
+ ip address 10.3.0.97 255.255.255.240
+ ip helper-address 10.3.2.2
+!
+interface GigabitEthernet0/0.30
+ description VLAN 30 Medewerkers
+ encapsulation dot1Q 30
+ ip address 10.3.0.1 255.255.255.192
+ ip access-group Medewerkers in
+ ip helper-address 10.3.2.2
+!
+interface GigabitEthernet0/1
+ ip address 10.3.0.113 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface Serial0/0/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/0/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/1/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/1/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+router ospf 1
+ router-id 10.3.0.0
+ network 10.3.0.0 0.0.0.63 area 0
+ network 10.3.0.64 0.0.0.31 area 0
+ network 10.3.0.96 0.0.0.15 area 0
+ network 10.3.0.112 0.0.0.3 area 0
+!
+ip default-gateway 10.3.0.114
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 10.3.0.114
+!
+ip access-list extended Gasten
+ permit udp any any
+ permit udp any eq bootpc any eq bootps
+ deny   ip any 10.3.2.0 0.0.0.3
+ deny   ip any 10.3.0.0 0.0.0.63
+ deny   ip any 10.3.0.96 0.0.0.15
+ deny   ip any 10.3.0.112 0.0.0.3
+ permit ip any any
+ip access-list extended Medewerkers
+ deny   tcp any host 10.3.0.1 eq 22
+ deny   ip any 10.3.0.64 0.0.0.31
+ deny   ip any 10.3.0.96 0.0.0.15
+ deny   ip any 10.3.0.112 0.0.0.3
+ deny   ip any 10.3.1.64 0.0.0.15
+ deny   ip any 10.3.1.80 0.0.0.3
+ permit ip any any
+!
+!
+!
+radius-server host 10.3.2.2 key QViZVHyudYqE!GGJuTY@MODYQmuJtQ%J%EnAqmWyRLGWjQe^&ATiGhy0!kqnpsJ^
+!
+!
+!
+control-plane
+!
+!
+!
+line con 0
+ privilege level 15
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport output pad telnet rlogin lapb-ta mop udptn v120 ssh
+ stopbits 1
+line vty 0 4
+ privilege level 15
+ transport input ssh
+!
+scheduler allocate 20000 1000
+ntp update-calendar
+ntp server 0.nl.pool.ntp.org
+!
+end
